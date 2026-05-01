@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Projeto-Academia-POO}",
+            "name": "Debug Dia_3",
+            "target": "Dia_3",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug Dia_3"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Projeto-Academia-POO}",
+            "name": "Release Dia_3",
+            "target": "Dia_3",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release Dia_3"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Projeto-Academia-POO}",
+            "name": "Debug Dia_2",
+            "target": "Dia_2",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug Dia_2"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Projeto-Academia-POO}",
+            "name": "Release Dia_2",
+            "target": "Dia_2",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release Dia_2"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Projeto-Academia-POO}",
+            "name": "Debug Dia_1",
+            "target": "Dia_1",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug Dia_1"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Projeto-Academia-POO}",
+            "name": "Release Dia_1",
+            "target": "Dia_1",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release Dia_1"
+        }
+    ]
+}
