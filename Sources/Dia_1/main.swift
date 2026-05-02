@@ -15,7 +15,6 @@ enum CategoriaAula {
 }
 
 class PlanoAssinatura {
-
     let nome: String
     let valorMensalidade: Double
     let incluiPersonalTrainer: Bool
@@ -112,16 +111,16 @@ class Instrutor: Pessoa {
     }
 }
 
-let aluno1 = Aluno(nome: "Carlos Silva", email: "carlos@email.com", matricula: "A001", plano: CatalogoPlanos.mensal, nivel: .iniciante)
+let aluno1 = Aluno(nome: "Murilo", email: "murilo@gmail.com", matricula: "026", plano: CatalogoPlanos.mensal, nivel: .avancado)
 
-let instrutor1 = Instrutor(nome: "Mariana Souza", email: "mariana@email.com", especialidade: .yoga)
+let instrutor1 = Instrutor(nome: "Abel", email: "abel@email.com", especialidade: .musculacao)
 
 
 aluno1.atualizarPlano(novoPlano: CatalogoPlanos.anual)
 
 aluno1.atualizarNivel(novoNivel: .intermediario)
 
-
+print("---------------------")
 print("ALUNO")
 print("Nome: \(aluno1.nome)")
 print("Email: \(aluno1.email)")
@@ -129,8 +128,7 @@ print("Matrícula: \(aluno1.matricula)")
 print("Plano: \(aluno1.plano.nome)")
 print("Função: \(aluno1.funcao)")
 
-print("")
-
+print("---------------------")
 print("INSTRUTOR")
 print("Nome: \(instrutor1.nome)")
 print("Email: \(instrutor1.email)")
