@@ -79,7 +79,6 @@ class Pessoa {
 }
 
 class Aluno: Pessoa {
-
     let matricula: String
     var plano: PlanoAssinatura
     var nivel: NivelExperiencia
@@ -112,16 +111,13 @@ class Instrutor: Pessoa {
 }
 
 protocol ContratoManutencao {
-
     var nomeItem: String { get }
-
     var historico: [String] { get }
 
     func realizarReparo(data: String, status: StatusRegularidade) -> Bool
 }
 
 class EquipamentoFisico: ContratoManutencao {
-
     let nomeItem: String
     private(set) var historico: [String]
     var estaDefeituoso: Bool
@@ -146,18 +142,13 @@ class EquipamentoFisico: ContratoManutencao {
 }
 
 protocol Aula {
-
     var nome: String { get }
-
     var instrutor: Instrutor { get }
-
     var categoria: CategoriaAula { get }
-
     var descricao: String { get }
 }
 
 class TurmaColetiva: Aula {
-
     let nome: String
     let instrutor: Instrutor
     let categoria: CategoriaAula
@@ -180,7 +171,6 @@ class TurmaColetiva: Aula {
     }
 
     func inscreverAluno(_ aluno: Aluno) -> Bool {
-
         if alunosInscritos.count >= capacidadeMaxima {
             print("Inscrição falhou: turma cheia.(\(capacidadeMaxima))")
             return false
@@ -248,10 +238,10 @@ let turmaLuta = TurmaColetiva(
 print("-----------------------")
 print("Turma \(turmaLuta.nome)")
 print("")
-itturmaLuta.inscreverAluno(aluno1)
-turmaLuta.inscreverAluno(aluno1)
-turmaLuta.inscreverAluno(aluno2)
-turmaLuta.inscreverAluno(aluno3)
+_ = turmaLuta.inscreverAluno(aluno1)
+_ = turmaLuta.inscreverAluno(aluno1)
+_ = turmaLuta.inscreverAluno(aluno2)
+_ = turmaLuta.inscreverAluno(aluno3)
 print("")
 
 print("Turma possui mínimo: \(turmaLuta.possuiQuantidadeMinima())")

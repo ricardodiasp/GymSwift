@@ -56,11 +56,7 @@ class CatalogoPlanos {
         duracaoEmMeses: 12
     )
 
-    static let todos = [
-        mensal,
-        trimestral,
-        anual
-    ]
+    static let todos = [mensal, trimestral, anual]
 }
 
 
