@@ -5,20 +5,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "PreparandoAmbiente", // Aqui você deve alterar para o nome do seu repositorio
+    name: "Gym-Swift", 
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
-            name: "Dia_1"
-        ),
-        .executableTarget(
-            name: "Dia_2"
-        ),
-        .executableTarget(
-            name: "Dia_3"
+            name: "GymSwift",
+            path: "Sources/GymSwift"
         )
     ]
 )
 
-//para rodar cada aula, no terminal: swift run <nome da pasta da aula> - Exemplo: swift run Aula_1
+//para executar o projeto: swift run GymSwift, ou apenas swift run
